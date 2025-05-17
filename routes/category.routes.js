@@ -10,11 +10,11 @@ route.post(
   categoryRegister
 );
 route.get("/view-category", getAllCategory );
-route.post(
+route.put(
   "/update-category/:id",
   uploadImage.single("categoryImage"),updateCategory
 );
 
-route.get("/delete-category/:id", deleteCategory);
+route.delete("/delete-category/:id", deleteCategory);
 
 module.exports = route;

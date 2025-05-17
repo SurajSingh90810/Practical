@@ -8,7 +8,7 @@ routes.post("/add-product",uploadImage.single("productImage"),addProduct)
 routes.get("/view-product", viewAllProduct);
  
 
-routes.post("/update-product/:id",uploadImage.single("productImage"),updateProduct)
-routes.get("/delete-product/:id", deleteProduct);
+routes.put("/update-product/:id",uploadImage.single("productImage"),updateProduct)
+routes.delete("/delete-product/:id", deleteProduct);
  
  module.exports = routes;
